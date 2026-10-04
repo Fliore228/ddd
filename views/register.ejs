@@ -1,0 +1,17 @@
+<%- include('header', { title: 'Регистрация' }) %>
+
+
+<h1><%= title %></h1>
+
+<form method="POST" action="/register">
+    <input name="login" placeholder="Логин">
+    <input name="password" type="password" placeholder="Пароль">
+    <input name="city" placeholder="Город">
+    <input name="fio" placeholder="ФИО">
+    <input name="phone" placeholder="Телефон">
+    <input name="email" type="email" placeholder="Email">
+    <button type="submit">Создать пользователя</button>
+    <button type="reset">Очистить форму</button>
+</form>
+
+<%- include('footer') %>

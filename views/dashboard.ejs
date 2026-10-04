@@ -1,0 +1,15 @@
+<%- include('header') %>
+
+<h1><%= title %></h1>
+
+<p>Пользователь: <%= user.fio %></p>
+
+<h2>Мои заявки</h2>
+
+<% requests.forEach(request => { %>
+    <p>
+        <%= request.room_name %> — <%= request.status %>
+    </p>
+<% }) %>
+
+<%- include('footer') %>
